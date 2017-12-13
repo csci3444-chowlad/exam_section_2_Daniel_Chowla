@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+
+<body class="container">
+    <header>
+        <% include ../partials/header.ejs %>
+    </header>
+<h2>
+     Daniel Chowla
+      </h2>
+    <main>
+        <div class="jumbotron">
+            
+            <h1>Number to be cubed:
+                <%= inpNumber %>
+            </h1>
+            <ul>
+               
+                    <li>The number 3 cubed will output the number:
+                            <%= resultNumber %>
+                    </li>
+                    
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

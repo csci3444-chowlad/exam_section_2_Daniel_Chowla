@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+
+<body class="container">
+    <header>
+        <% include ../partials/header.ejs %>
+    </header>
+<h2>
+     Daniel Chowla
+      </h2>
+    <main>
+        <div class="jumbotron">
+            
+            <h1>Number to be squared:
+                <%= inpNumber %>
+            </h1>
+            <ul>
+               
+                    <li>The result of square will output the number:
+                            <%= resultNumber %>
+                    </li>
+                    
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

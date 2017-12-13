@@ -1,0 +1,42 @@
+{
+  "name": "exam_section_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jasmine-node": "^1.14.5",
+    "istanbul": "^0.4.5",
+    "mongoose": "^4.13.4",
+    "nyc": "^11.3.0",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "nyc": "^11.3.0"
+  },
+  "scripts": {
+    "test": "npm run testAndCoverage",
+    "testAndCoverage": "npm run testAndCoverage_via_istanbul && npm run testAndCoverage_via_nyc",
+    "testAndCoverage_via_nyc": "nyc mocha --recursive",
+    "testAndCoverage_via_istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
+    "testOnly": "npm run test_mocha_all",
+    "test_mocha_all": "mocha --recursive",
+    "testAndCoverageAndReport": "npm run testAndCoverage && npm run openCoverageReport",
+    "openCoverageReport": "npm run openCoverageReport_inBrowser",
+    "openCoverageReport_inBrowser": "opn coverage/lcov-report/index.html",
+    "start_express_ejs_bootstrap_with_nodemon": "nodemon src/main_webServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
