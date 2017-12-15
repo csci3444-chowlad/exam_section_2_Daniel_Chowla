@@ -24,6 +24,7 @@ node_modules/
 .settings/
 .c9
 .idea/
+.vscode/
 *.launch
 *.sublime-workspace
 
