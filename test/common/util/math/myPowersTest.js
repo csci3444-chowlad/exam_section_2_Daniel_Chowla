@@ -11,6 +11,15 @@ describe('myPowers', function() {
             let result = myPowers.toSquare(num1String);
             assert.equal(result, num1*num1);
         });
+        it('toSquare("' + num1 + '") should return Square value of ' + num1, function() {
+            let result = myPowers.toSquare(num1);
+            assert.equal(result, num1*num1);
+        });
+
+        it('toSquare should return type number', function() {
+            let result = myPowers.toSquare(num1String);
+            assert.typeOf(result, 'number');
+        });
     });
 
     describe('toCube', function() {
@@ -19,8 +28,13 @@ describe('myPowers', function() {
             assert.equal(result, num1*num1*num1);
         });
 
-        it('toSquare should return type number', function() {
-            let result = myPowers.toSquare(num1String);
+        it('toCube("' + num1 + '") should return Square value of ' + num1, function() {
+            let result = myPowers.toCube(num1);
+            assert.equal(result, num1*num1*num1);
+        });
+
+        it('toCube should return type number', function() {
+            let result = myPowers.toCube(num1String);
             assert.typeOf(result, 'number');
         });
     });

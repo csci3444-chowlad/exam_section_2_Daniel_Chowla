@@ -24,6 +24,11 @@ describe('myCube', function() {
             assert.equal(result, num1*num1*num1);
         });
 
+        it('toCube("' + num1 + '") should return Square value of ' + num1, function() {
+            let result = myCube.toCube(num1);
+            assert.equal(result, num1*num1*num1);
+        });
+
         it('toCube should return type number', function() {
             let result = myCube.toCube(num1);
             assert.typeOf(result, 'number');

@@ -23,5 +23,15 @@ describe('mySquare', function() {
             let result = mySquare.toSquare(num1String);
             assert.equal(result, num1*num1);
         });
+
+        it('toSquare("' + num1 + '") should return Square value of ' + num1, function() {
+            let result = mySquare.toSquare(num1);
+            assert.equal(result, num1*num1);
+        });
+
+        it('toSquare should return type number', function() {
+            let result = mySquare.toSquare(num1);
+            assert.typeOf(result, 'number');
+        });
     });
 });
